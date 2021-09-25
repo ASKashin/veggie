@@ -1,0 +1,24 @@
+@import "colors";
+
+.about {
+  background: $light-grey url("../../assets/images/bg3.png") 110% center no-repeat;
+  padding: 15.3125rem 0 10.625rem;
+
+  h3 {
+    background: url("../../assets/images/decoration.png") center bottom no-repeat;
+    margin-bottom: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    width: 41.5625rem;
+  }
+
+  p {
+    background: url("../../assets/images/sign.png") 90% bottom no-repeat;
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 3.375rem;
+    padding-bottom: 12rem;
+    text-align: center;
+    width: 41.5625rem;
+  }
+}

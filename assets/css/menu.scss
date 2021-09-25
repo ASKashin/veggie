@@ -1,0 +1,88 @@
+@import "colors";
+
+.menu {
+  padding: 4.1875rem 0;
+
+  h3 {
+    background: url("../../assets/images/decoration.png") center bottom no-repeat;
+    margin-bottom: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    ul {
+      li {
+        display: inline-block;
+
+        a {
+          border: 1px solid transparent;
+          display: block;
+          height: 3.125rem;
+          line-height: 3.125rem;
+          padding: 0 1.5rem;
+          text-align: center;
+          transition: border-color 0.1s ease-in-out;
+
+          &:hover {
+            border-color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    > div {
+      width: 40rem;
+
+      ul {
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2.75rem;
+          position: relative;
+
+          &::before {
+            border-bottom: 1px dashed $black;
+            content: '';
+            left: 0;
+            position: absolute;
+            top: 1rem;
+            width: 100%;
+          }
+
+          .description {
+            h5 {
+              background-color: $white;
+              font-size: 1.125rem;
+              font-weight: 300;
+              margin-bottom: 0.2rem;
+              padding-right: 0.5rem;
+              position: relative;
+              text-transform: uppercase;
+            }
+
+            p {
+              font-size: 0.875rem;
+              font-style: italic;
+            }
+          }
+
+          .price {
+            background-color: $white;
+            font-size: 1.125rem;
+            padding-left: 0.5rem;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

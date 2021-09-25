@@ -1,0 +1,40 @@
+.benefits {
+  background-image: url("../../assets/images/bg2.jpg");
+
+  ul {
+    display: flex;
+    gap: 10rem;
+
+    li {
+      background-position: center 4.8rem;
+      background-repeat: no-repeat;
+      display: block;
+      flex: 1;
+      padding: 11.5625rem 0 5.3125rem;
+      text-align: center;
+      width: 33.333%;
+
+      &.noodles {
+        background-image: url("../../assets/images/noodles.png");
+      }
+
+      &.teapot {
+        background-image: url("../../assets/images/teapot.png");
+      }
+
+      &.ice {
+        background-image: url("../../assets/images/ice.png");
+      }
+
+      h4 {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-weight: 300;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

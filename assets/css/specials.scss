@@ -1,0 +1,73 @@
+@import "colors";
+
+.specials {
+  padding: 4.875rem 0 6.6875rem;
+
+  h3 {
+    background: url("../../assets/images/decoration.png") center bottom no-repeat;
+    margin-bottom: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: block;
+      min-width: 33.3%;
+
+      a {
+        display: flex;
+        transition: opacity 0.2s ease-in-out;
+
+        div {
+          background-color: $light-grey;
+          padding-top: 4.375rem;
+          text-align: center;
+          width: 100%;
+
+          h5 {
+            margin-bottom: 1rem;
+            padding-bottom: 0.7rem;
+            position: relative;
+
+            &::after {
+              background-color: $black;
+              bottom: 0;
+              content: '';
+              height: 1px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-3rem);
+              width: 6rem;
+            }
+          }
+
+          .description {
+            font-weight: 300;
+            line-height: 1.5rem;
+            margin: 0 auto 1rem;
+            width: 12rem;
+          }
+
+          .price {
+            font-size: 1.125rem;
+            font-weight: 700;
+          }
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      &.right {
+        a {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "colors";
+
+.intro {
+  background: url("../../assets/images/bg1.jpg") left top no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  header {
+    padding-top: 3.4375rem;
+
+    nav {
+      text-align: right;
+
+      li {
+        display: inline-block;
+
+        a {
+          border: 1px solid transparent;
+          display: block;
+          height: 3.125rem;
+          line-height: 3.125rem;
+          text-align: center;
+          transition: border-color 0.1s ease-in-out;
+          width: 6.25rem;
+
+          &:hover {
+            border-color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: end;
+    margin-top: 20rem;
+
+    h1 {
+      background: url("../../assets/images/decoration.png") center bottom no-repeat;
+      margin-right: 3rem;
+      padding-bottom: 3.5rem;
+      text-align: center;
+      width: 35rem;
+    }
+  }
+}

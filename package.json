@@ -1,0 +1,19 @@
+{
+  "name": "veggie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --include-path scss assets/css/index.scss public/css/main.css --output-style compressed",
+    "watch": "nodemon -e scss -x \"npm run scss\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13",
+    "normalize-scss": "^7.0.1"
+  }
+}
